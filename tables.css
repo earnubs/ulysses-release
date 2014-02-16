@@ -1,0 +1,82 @@
+.ues-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  border: 1px dotted #AEA79F;
+}
+
+.ues-table caption {
+  font-style: italic;
+  font-size: 13px;
+  line-height: 1;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.ues-table td,
+.ues-table th {
+  background-color: #F0EDEA;
+  border-left: 1px dotted #AEA79F;
+  border-width: 0 0 0 1px;
+  padding: 15px 10px;
+  overflow: visible;
+}
+
+.ues-table-small td,
+.ues-table-small th {
+  padding: 5px 10px;
+}
+
+.ues-table td:first-child,
+.ues-table th:first-child {
+  border-left-width: 0;
+}
+
+.ues-table thead {
+  background-color: #FEE3D2;
+  color: #333;
+  text-align: left;
+  font-weight: normal;
+  vertical-align: bottom;
+}
+
+.ues-table thead th {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  background-color: transparent;
+}
+
+.ues-table tfoot th,
+.ues-table tbody th {
+  font-weight: 300;
+}
+
+/* bordered */
+
+.ues-table-bordered th,
+.ues-table-bordered td {
+  border-bottom: 1px dotted #AEA79F;
+}
+
+.ues-table-bordered tbody > tr:last-child td,
+.ues-table-horizontal tbody > tr:last-child td {
+  border-bottom-width: 0;
+}
+
+/* horizontally bordered */
+
+.ues-table-horizontal td,
+.ues-table-horizontal th {
+  border-width: 0 0 1px 0;
+  border-bottom: 1px dotted #cbcbcb;
+}
+
+.ues-table-horizontal tbody > tr:last-child td {
+  border-bottom-width: 0;
+}
+
+/* striped */
+
+.ues-table-striped tr:nth-child(2n-1) td {
+  background-color: #F7F7F7;
+}

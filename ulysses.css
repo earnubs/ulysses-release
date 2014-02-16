@@ -1,0 +1,2174 @@
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-family: sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+    background: transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+
+img {
+    border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/** anything you want to add to normalize.css or base css like stuff */
+.ues-button {
+  background-color: #dedede;
+  background-image: -o-linear-gradient(to bottom, #f7f7f7 0%, #e6e6e6 100%);
+  background-image: -ms-linear-gradient(to bottom, #f7f7f7 0%, #e6e6e6 100%);
+  background-image: -moz-linear-gradient(to bottom, #f7f7f7 0%, #e6e6e6 100%);
+  background-image: -webkit-linear-gradient(to bottom, #f7f7f7 0%, #e6e6e6 100%);
+  background-image: linear-gradient(to bottom, #f7f7f7 0%, #e6e6e6 100%);
+  display: inline-block;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  padding: 5px 19px;
+  text-align: center;
+  vertical-align: baseline;
+  text-transform: uppercase;
+  border: 1px solid #aea79f;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.ues-button:hover {
+  background-color: #e6e6e6;
+  background-image: -o-linear-gradient(to bottom, #fff 0%, #e6e6e6 100%);
+  background-image: -ms-linear-gradient(to bottom, #fff 0%, #e6e6e6 100%);
+  background-image: -moz-linear-gradient(to bottom, #fff 0%, #e6e6e6 100%);
+  background-image: -webkit-linear-gradient(to bottom, #fff 0%, #e6e6e6 100%);
+  background-image: linear-gradient(to bottom, #fff 0%, #e6e6e6 100%);
+}
+
+.ues-button:focus {
+  -o-box-shadow: #f7f6f5 0 0 0 1px;
+  -ms-box-shadow: #f7f6f5 0 0 0 1px;
+  -moz-box-shadow: #f7f6f5 0 0 0 1px;
+  -webkit-box-shadow: #f7f6f5 0 0 0 1px;
+  box-shadow: #f7f6f5 0 0 0 1px;
+}
+
+.ues-button:focus,
+.ues-button:active {
+  background-color: #e6e6e6;
+  background-image: -o-linear-gradient(to bottom, #e6e6e6 0%, #cdcdcd 90%, #fff 100%);
+  background-image: -ms-linear-gradient(to bottom, #e6e6e6 0%, #cdcdcd 90%, #fff 100%);
+  background-image: -moz-linear-gradient(to bottom, #e6e6e6 0%, #cdcdcd 90%, #fff 100%);
+  background-image: -webkit-linear-gradient(to bottom, #e6e6e6 0%, #cdcdcd 90%, #fff 100%);
+  background-image: linear-gradient(to bottom, #e6e6e6 0%, #cdcdcd 90%, #fff 100%);
+}
+
+.ues-button-primary {
+  background-color: #dd4814;
+  background-image: -o-linear-gradient(to bottom, #f39455 0%, #ef5e1f 5%, #dd4814 100%);
+  background-image: -ms-linear-gradient(to bottom, #f39455 0%, #ef5e1f 5%, #dd4814 100%);
+  background-image: -moz-linear-gradient(to bottom, #f39455 0%, #ef5e1f 5%, #dd4814 100%);
+  background-image: -webkit-linear-gradient(to bottom, #f39455 0%, #ef5e1f 5%, #dd4814 100%);
+  background-image: linear-gradient(to bottom, #f39455 0%, #ef5e1f 5%, #dd4814 100%);
+  color: #fff;
+  border-color: #ad2e03;
+}
+
+.ues-button-primary:hover {
+  background-color: #f28a45;
+  background-image: -o-linear-gradient(to bottom, #f39455 0%, #f28a45 5%, #dd4814 100%);
+  background-image: -ms-linear-gradient(to bottom, #f39455 0%, #f28a45 5%, #dd4814 100%);
+  background-image: -moz-linear-gradient(to bottom, #f39455 0%, #f28a45 5%, #dd4814 100%);
+  background-image: -webkit-linear-gradient(to bottom, #f39455 0%, #f28a45 5%, #dd4814 100%);
+  background-image: linear-gradient(to bottom, #f39455 0%, #f28a45 5%, #dd4814 100%);
+}
+
+.ues-button-primary:focus,
+.ues-button-primary:active {
+  background-color: #dd4814;
+  background-image: -o-linear-gradient(to bottom, #dd4814 0%, #bf3b0d 5%, #f39455 100%);
+  background-image: -ms-linear-gradient(to bottom, #dd4814 0%, #bf3b0d 5%, #f39455 100%);
+  background-image: -moz-linear-gradient(to bottom, #dd4814 0%, #bf3b0d 5%, #f39455 100%);
+  background-image: -webkit-linear-gradient(to bottom, #dd4814 0%, #bf3b0d 5%, #f39455 100%);
+  background-image: linear-gradient(to bottom, #dd4814 0%, #bf3b0d 5%, #f39455 100%);
+  border-color: #333;
+}
+
+.ues-button-tertiary {
+  background-color: white;
+  background-image: none;
+  border: 1px solid #c8c8c8;
+}
+
+.ues-button-tertiary:hover {
+  background-color: #e6e6e6;
+  background-image: none;
+  border-color: #cdcdcd;
+}
+
+.ues-button-tertiary:focus,
+.ues-button-tertiary:active {
+  background-color: #e6e6e6;
+  background-image: none;
+  border-color: #dd4814;
+}
+
+a.ues-button {
+  color: inherit;
+}
+
+.ues-button-small {
+  font-size: 11px;
+  padding: 0 5px;
+  font-weight: 400;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.ues-button-large {
+  font-size: 16px;
+  padding: 14px 38px;
+  -o-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+}
+
+.ues-button-block {
+  margin: 0.5em 0;
+  display: block;
+  width: 100%;
+}
+
+/** a non text button needs less padding */
+
+.ues-button-icon {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.ues-button-group {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ues-button-group .ues-button {
+  float: left;
+}
+
+/** first child of >1 buttons **/
+
+.ues-button-group > .ues-button:first-child:not(:last-child):not(.ues-dropdown-toggle) {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right: none;
+}
+
+/** last child of >1 buttonsi **/
+
+.ues-button-group > .ues-button:last-child:not(:first-child),
+.ues-button-group > .ues-dropdown-toggle:not(:first-child) {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+/** any button surrounded by other buttons **/
+
+.ues-button-group > .ues-button:not(:first-child):not(:last-child):not(.ues-dropdown-toggle) {
+  border-right: none;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+.ues-dropdown {
+  position: relative;
+}
+
+.ues-dropdown-menu {
+  font-size: 13px;
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  border: 1px solid #ccc;
+  background-clip: padding-box;
+  background-color: #fff;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -o-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.ues-dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  white-space: nowrap;
+  clear: both;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.ues-dropdown-menu > li > a:hover {
+  background: #f75216;
+  color: white;
+}
+
+.ues-dropdown-divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #ccc;
+}
+
+.ues-dropdown-header {
+  display: block;
+  padding: 2px 20px;
+  color: #999;
+}
+
+/** button dropdowns **/
+
+.open > .ues-dropdown-menu {
+  display: block;
+}
+
+.open > .ues-dropdown-toggle {
+  background: #cfcfcf;
+  -o-box-shadow: inset 0 3px 2px 0 rgba(0,0,0,0.1);
+  -ms-box-shadow: inset 0 3px 2px 0 rgba(0,0,0,0.1);
+  -moz-box-shadow: inset 0 3px 2px 0 rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 3px 2px 0 rgba(0,0,0,0.1);
+  box-shadow: inset 0 3px 2px 0 rgba(0,0,0,0.1);
+}
+form {
+  margin: 1em 0;
+}
+
+fieldset {
+  margin: 0 0 2em 0;
+  padding: 0;
+  border: 0;
+}
+
+legend {
+  display: block;
+  width: 100%;
+  font-size: 23px;
+  line-height: inherit;
+  border: 0;
+  margin: 0 0 1em 0;
+}
+
+label {
+  display: block;
+  margin: 0.8em 0 0.3em;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 0.5em;
+}
+
+/** use a span or div depending on what you want for block/inline **/
+
+.ues-form-help {
+  font-size: 14px;
+  padding: 0em 1em;
+  background-color: #eee;
+  color: #555;
+  position: relative;
+  margin: 0.5em 0;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+span.ues-form-help {
+  display: inline-block;
+  margin: 0;
+}
+
+/** TODO move to base? **/
+
+.ues-inline {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="week"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.5em 0.6em;
+  margin: 0 0 0.5em 0;
+  display: block;
+  border: 1px solid #ccc;
+  font-weight: inherit;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -ms-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -o-transition: 0.3s linear border;
+  -ms-transition: 0.3s linear border;
+  -moz-transition: 0.3s linear border;
+  -webkit-transition: 0.3s linear border;
+  transition: 0.3s linear border;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+select:focus,
+textarea:focus {
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+  border-color: #129FEA;
+}
+
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: thin dotted #333;
+  outline: 1px auto #129FEA;
+}
+
+input[type="text"][disabled],
+input[type="password"][disabled],
+input[type="email"][disabled],
+input[type="url"][disabled],
+input[type="date"][disabled],
+input[type="month"][disabled],
+input[type="time"][disabled],
+input[type="datetime"][disabled],
+input[type="datetime-local"][disabled],
+input[type="week"][disabled],
+input[type="number"][disabled],
+input[type="search"][disabled],
+input[type="tel"][disabled],
+input[type="color"][disabled],
+select[disabled],
+textarea[disabled] {
+  cursor: not-allowed;
+  background-color: #eaeded;
+  color: #cad2d3;
+}
+
+input[readonly],
+select[readonly],
+textarea[readonly] {
+  background: #eee;
+  /* menu hover bg color */
+  color: #777;
+  /* menu text color */
+  border-color: #ccc;
+}
+
+input:focus:invalid,
+textarea:focus:invalid,
+select:focus:invalid {
+  color: #b94a48;
+  border: 1px solid #ee5f5b;
+}
+
+input:focus:invalid:focus,
+textarea:focus:invalid:focus,
+select:focus:invalid:focus {
+  border-color: #e9322d;
+}
+
+input[type="file"]:focus:invalid:focus,
+input[type="radio"]:focus:invalid:focus,
+input[type="checkbox"]:focus:invalid:focus {
+  outline-color: #e9322d;
+}
+
+select {
+  display: inline-block;
+  width: auto;
+}
+
+.ues-form-inline label,
+.ues-form-inline input {
+  width: auto;
+  display: inline-block;
+}
+
+/** Maybe this is something better left out of the scaffold? **/
+
+.ues-form-inline label {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+/*!
+Pure v0.3.0
+Copyright 2013 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+https://github.com/yui/pure/blob/master/LICENSE.md
+*/
+
+/*csslint regex-selectors:false, known-properties:false, duplicate-properties:false*/
+
+.ues-g {
+    letter-spacing: -0.31em;
+    /* Webkit: collapse white-space between units */
+    *letter-spacing: normal;
+    /* reset IE < 8 */
+    *word-spacing: -0.43em;
+    /* IE < 8: collapse white-space between units */
+    text-rendering: optimizespeed;
+    /* Webkit: fixes text-rendering: optimizeLegibility */
+    /*
+    Sets the font stack to fonts known to work properly with the above letter
+    and word spacings. See: https://github.com/yui/pure/issues/41/
+
+    The following font stack makes Pure Grids work on all known environments.
+
+    * FreeSans: Ships with many Linux distros, including Ubuntu
+
+    * Arimo: Ships with Chrome OS. Arimo has to be defined before Helvetica and
+      Arial to get picked up by the browser, even though neither is available
+      in Chrome OS.
+
+    * Droid Sans: Ships with all versions of Android.
+
+    * Helvetica, Arial, sans-serif: Common font stack on OS X and Windows.
+    */
+    font-family: FreeSans, Arimo, "Droid Sans", Helvetica, Arial, sans-serif;
+    /*
+    Use flexbox when possible to avoid `letter-spacing` side-effects.
+
+    NOTE: Firefox (as of 25) does not currently support flex-wrap, so the
+    `-moz-` prefix version is omitted.
+    */
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    /* IE10 uses display: flexbox */
+    display: -ms-flexbox;
+    -ms-flex-flow: row wrap;
+}
+
+/* Opera as of 12 on Windows needs word-spacing.
+   The ".opera-only" selector is used to prevent actual prefocus styling
+   and is not required in markup.
+*/
+
+.opera-only :-o-prefocus,
+.ues-g {
+    word-spacing: -0.43em;
+}
+
+.ues-u {
+    display: inline-block;
+    *display: inline;
+    /* IE < 8: fake inline-block */
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+}
+
+/*
+Resets the font family back to the OS/browser's default sans-serif font,
+this the same font stack that Normalize.css sets for the `body`.
+*/
+
+.ues-g [class *= "pure-u"] {
+    font-family: sans-serif;
+}
+
+.ues-u-1,
+.ues-u-1-2,
+.ues-u-1-3,
+.ues-u-2-3,
+.ues-u-1-4,
+.ues-u-3-4,
+.ues-u-1-5,
+.ues-u-2-5,
+.ues-u-3-5,
+.ues-u-4-5,
+.ues-u-1-6,
+.ues-u-5-6,
+.ues-u-1-8,
+.ues-u-3-8,
+.ues-u-5-8,
+.ues-u-7-8,
+.ues-u-1-12,
+.ues-u-5-12,
+.ues-u-7-12,
+.ues-u-11-12,
+.ues-u-1-24,
+.ues-u-5-24,
+.ues-u-7-24,
+.ues-u-11-24,
+.ues-u-13-24,
+.ues-u-17-24,
+.ues-u-19-24,
+.ues-u-23-24 {
+    display: inline-block;
+    *display: inline;
+    /* IE < 8: fake inline-block */
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+}
+
+.ues-u-1 {
+    width: 100%;
+}
+
+.ues-u-1-2 {
+    width: 50%;
+    *width: 49.969%;
+}
+
+.ues-u-1-3 {
+    width: 33.3333%;
+    *width: 33.3023%;
+}
+
+.ues-u-2-3 {
+    width: 66.6667%;
+    *width: 66.6357%;
+}
+
+.ues-u-1-4 {
+    width: 25%;
+    *width: 24.969%;
+}
+
+.ues-u-3-4 {
+    width: 75%;
+    *width: 74.969%;
+}
+
+.ues-u-1-5 {
+    width: 20%;
+    *width: 19.969%;
+}
+
+.ues-u-2-5 {
+    width: 40%;
+    *width: 39.969%;
+}
+
+.ues-u-3-5 {
+    width: 60%;
+    *width: 59.969%;
+}
+
+.ues-u-4-5 {
+    width: 80%;
+    *width: 79.969%;
+}
+
+.ues-u-1-6 {
+    width: 16.6667%;
+    *width: 16.6357%;
+}
+
+.ues-u-5-6 {
+    width: 83.3333%;
+    *width: 83.3023%;
+}
+
+.ues-u-1-8 {
+    width: 12.5%;
+    *width: 12.469%;
+}
+
+.ues-u-3-8 {
+    width: 37.5%;
+    *width: 37.469%;
+}
+
+.ues-u-5-8 {
+    width: 62.5%;
+    *width: 62.469%;
+}
+
+.ues-u-7-8 {
+    width: 87.5%;
+    *width: 87.469%;
+}
+
+.ues-u-1-12 {
+    width: 8.3333%;
+    *width: 8.3023%;
+}
+
+.ues-u-5-12 {
+    width: 41.6667%;
+    *width: 41.6357%;
+}
+
+.ues-u-7-12 {
+    width: 58.3333%;
+    *width: 58.3023%;
+}
+
+.ues-u-11-12 {
+    width: 91.6667%;
+    *width: 91.6357%;
+}
+
+.ues-u-1-24 {
+    width: 4.1667%;
+    *width: 4.1357%;
+}
+
+.ues-u-5-24 {
+    width: 20.8333%;
+    *width: 20.8023%;
+}
+
+.ues-u-7-24 {
+    width: 29.1667%;
+    *width: 29.1357%;
+}
+
+.ues-u-11-24 {
+    width: 45.8333%;
+    *width: 45.8023%;
+}
+
+.ues-u-13-24 {
+    width: 54.1667%;
+    *width: 54.1357%;
+}
+
+.ues-u-17-24 {
+    width: 70.8333%;
+    *width: 70.8023%;
+}
+
+.ues-u-19-24 {
+    width: 79.1667%;
+    *width: 79.1357%;
+}
+
+.ues-u-23-24 {
+    width: 95.8333%;
+    *width: 95.8023%;
+}
+
+/*csslint regex-selectors:false, known-properties:false, duplicate-properties:false*/
+
+.ues-g-r {
+    letter-spacing: -0.31em;
+    *letter-spacing: normal;
+    *word-spacing: -0.43em;
+    /*
+    Sets the font stack to fonts known to work properly with the above letter
+    and word spacings. See: https://github.com/yui/pure/issues/41/
+
+    The following font stack makes Pure Grids work on all known environments.
+
+    * FreeSans: Ships with many Linux distros, including Ubuntu
+
+    * Arimo: Ships with Chrome OS. Arimo has to be defined before Helvetica and
+      Arial to get picked up by the browser, even though neither is available
+      in Chrome OS.
+
+    * Droid Sans: Ships with all versions of Android.
+
+    * Helvetica, Arial, sans-serif: Common font stack on OS X and Windows.
+    */
+    font-family: FreeSans, Arimo, "Droid Sans", Helvetica, Arial, sans-serif;
+    /*
+    Use flexbox when possible to avoid `letter-spacing` side-effects.
+
+    NOTE: Firefox (as of 25) does not currently support flex-wrap, so the
+    `-moz-` prefix version is omitted.
+    */
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    /* IE10 uses display: flexbox */
+    display: -ms-flexbox;
+    -ms-flex-flow: row wrap;
+}
+
+/* Opera as of 12 on Windows needs word-spacing.
+   The ".opera-only" selector is used to prevent actual prefocus styling
+   and is not required in markup.
+*/
+
+.opera-only :-o-prefocus,
+.ues-g-r {
+    word-spacing: -0.43em;
+}
+
+/*
+Resets the font family back to the OS/browser's default sans-serif font,
+this the same font stack that Normalize.css sets for the `body`.
+*/
+
+.ues-g-r [class *= "pure-u"] {
+    font-family: sans-serif;
+}
+
+.ues-g-r img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 980px) {
+    .ues-visible-phone {
+        display: none;
+    }
+
+    .ues-visible-tablet {
+        display: none;
+    }
+
+    .ues-hidden-desktop {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .ues-g-r > .pure-u,
+    .ues-g-r > [class *= "pure-u-"] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .ues-g-r > .pure-u,
+    .ues-g-r > [class *= "pure-u-"] {
+        width: 100%;
+    }
+
+    .ues-hidden-phone {
+        display: none;
+    }
+
+    .ues-visible-desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .ues-hidden-tablet {
+        display: none;
+    }
+
+    .ues-visible-desktop {
+        display: none;
+    }
+}
+/**
+ * Grids.css is an import of YUI Pure framework grids CSS which is prepended
+ * to this file, therefore anything to add to grids.css goes here.
+ */
+[class*="ues-"],
+[class*="ues-"]:before,
+[class*="ues-"]:after,
+[class*="ues-"] *,
+[class*="ues-"] *:before,
+[class*="ues-"] *:after {
+  box-sizing: border-box;
+}
+
+/** modifiers/globals **/
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+/**
+ * http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+
+.clear:before,
+.clear:after {
+  content: " ";
+  display: table;
+}
+
+.clear:after {
+  clear: both;
+}
+
+/**
+ * Footer
+ */
+
+.ues-footer {
+  margin-top: 4em;
+}
+
+.ues-footer > .ues-footer-row {
+  font-size: 11px;
+  padding: 2em 1em;
+  background-color: #f7f6f5;
+  border-top: 1px solid #d8d8d8;
+}
+
+.ues-footer > .ues-footer-row + .ues-footer-row {
+  font-size: 12px;
+  background-color: #efedec;
+  border-top: 1px solid #d8d8d8;
+}
+
+@media screen and (max-width: 320px) {
+  .ues-footer > .ues-footer-row {
+    font-size: 14px;
+  }
+}
+
+.ues-footer a {
+  color: #333;
+}
+
+.ues-footer a:hover {
+  color: #dd4814;
+  text-decoration: underline;
+}
+
+.ues-footer-column {
+  margin: 0 20px 0 0;
+}
+
+.ues-footer .yui3-u-1-6:last-child .ues-footer-column {
+  margin: 0;
+}
+
+.ues-footer-copyright p {
+  margin: 0;
+}
+
+/**
+ * Boxes
+ */
+
+.ues-box {
+  padding: 20px;
+  margin: 0 0 2em 0;
+  -o-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+}
+
+.ues-box form {
+  margin: 0;
+}
+
+.ues-box label:first-child {
+  margin-top: 0;
+}
+
+.ues-box-solid {
+  background: #f7f6f5;
+}
+
+.ues-box-bordered {
+  border: 1px solid #ccc;
+}
+
+.ues-container {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 979px) {
+  .ues-container {
+    max-width: 970px;
+  }
+}
+
+.ues-container-small {
+  margin: 0 1em;
+}
+
+@media screen and (min-width: 760px) {
+  .ues-container-small {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+.ues-well {
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -o-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
+  -ms-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
+  -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
+}
+
+.ues-layout-app {
+  /** padding to match fixed navbar height **/
+  padding-top: 55px;
+}
+
+.ues-layout-body {
+  /** padding to match fixed navbar height **/
+  padding-top: 80px;
+}
+.ues-message {
+  padding: 0.5em 0.6em;
+  background-color: #E6E4E2;
+  border-color: #AEA79F;
+  color: #555;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.ues-message a:link {
+  color: inherit;
+  color: rgba(0,0,0,0.75);
+  text-decoration: underline;
+}
+
+.ues-message a:hover {
+  color: #000;
+}
+
+.ues-message-inline {
+  display: inline-block;
+}
+
+.ues-message-bordered {
+  border-width: 1px;
+  border-style: solid;
+  -o-box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.25);
+  -ms-box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.25);
+  -moz-box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.25);
+  -webkit-box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.25);
+  box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.25);
+}
+
+.ues-message-stack li {
+  border-top-width: 0;
+  border-bottom-color: #000;
+  border-bottom-color: rgba(0,0,0,0.25);
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+.ues-message-stack :first-child {
+  border-top-width: 1px;
+  -o-border-radius: 2px 2px 0 0;
+  -ms-border-radius: 2px 2px 0 0;
+  -moz-border-radius: 2px 2px 0 0;
+  -webkit-border-radius: 2px 2px 0 0;
+  border-radius: 2px 2px 0 0;
+}
+
+.ues-message-stack :last-child {
+  border-bottom-width: 1px;
+  -o-border-radius: 0 0 2px 2px;
+  -ms-border-radius: 0 0 2px 2px;
+  -moz-border-radius: 0 0 2px 2px;
+  -webkit-border-radius: 0 0 2px 2px;
+  border-radius: 0 0 2px 2px;
+}
+
+.ues-message-closeable {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  max-height: 1000px;
+  -o-transition: 0.3s ease all;
+  -ms-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.ues-message-closeable:after {
+  content: "✖";
+  position: absolute;
+  right: 0.6em;
+  opacity: 0;
+}
+
+.ues-message-closeable:hover:after {
+  opacity: 1;
+}
+
+.ues-message-closed {
+  max-height: 0;
+  padding: 0;
+  border: none;
+  margin: 0;
+  opacity: 0;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.ues-disabled {
+  color: #999;
+  border-color: #ccc;
+}
+
+.ues-success {
+  background-color: #AFE1B6;
+  border-color: #38B44A;
+  color: #114918;
+}
+
+.ues-warning {
+  background-color: #F8E2B1;
+  border-color: #EFB73E;
+  color: #68563F;
+}
+
+.ues-error {
+  background-color: #F5C2BF;
+  border-color: #DF382C;
+  color: #A11E1A;
+}
+
+@keyframes ues-error-pulsating {
+  from {
+    background: #FFE6E5;
+  }
+
+  to {
+    background: #FFA09B;
+  }
+}
+
+.ues-error-pulsating {
+  -o-animation: ues-error-pulsating 0.7s ease-in-out infinite alternate;
+  -ms-animation: ues-error-pulsating 0.7s ease-in-out infinite alternate;
+  -moz-animation: ues-error-pulsating 0.7s ease-in-out infinite alternate;
+  -webkit-animation: ues-error-pulsating 0.7s ease-in-out infinite alternate;
+  animation: ues-error-pulsating 0.7s ease-in-out infinite alternate;
+}
+
+.ues-information {
+  background-color: #B9E9FA;
+  border-color: #19B6EE;
+  color: #40525C;
+}
+
+@-o-keyframes ues-error-pulsating {
+  from {
+    background: #FFE6E5;
+  }
+
+  to {
+    background: #FFA09B;
+  }
+}
+
+@-ms-keyframes ues-error-pulsating {
+  from {
+    background: #FFE6E5;
+  }
+
+  to {
+    background: #FFA09B;
+  }
+}
+
+@-moz-keyframes ues-error-pulsating {
+  from {
+    background: #FFE6E5;
+  }
+
+  to {
+    background: #FFA09B;
+  }
+}
+
+@-webkit-keyframes ues-error-pulsating {
+  from {
+    background: #FFE6E5;
+  }
+
+  to {
+    background: #FFA09B;
+  }
+}
+/** menus **/
+
+.ues-menu {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.ues-menu li {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.ues-menu li a,
+.ues-menu li span {
+  display: block;
+  position: relative;
+  padding: 10px 15px;
+  /* don't use em's as we need predictable spacing */
+}
+
+.ues-menu li a:hover,
+.ues-menu li a:focus {
+  background-color: #f7f6f5;
+}
+
+.ues-menu-horizontal.ues-menu li {
+  border-bottom: none;
+}
+
+.ues-menu-horizontal li {
+  float: left;
+}
+
+.ues-menu-selected {
+  background-color: #f7f6f5;
+}
+
+.ues-menu-selected a:after {
+  content: '\25B8';
+  float: right;
+  color: #333;
+  font-size: 120%;
+}
+
+/** navbar **/
+
+.ues-navbar {
+  overflow: hidden;
+  background: #dd4814;
+  font-size: 13px;
+  /**
+     * 34px is height of standard button (20px + (7px x 2) )
+     * so this allows us to put in buttons and search inputs
+     */
+  line-height: 34px;
+}
+
+.ues-navbar-magic-block {
+  background-color: #dd4814;
+  /**
+     * change at the max ues-container width plus
+     * the logo with x2 (for both edges)
+     * **/
+}
+
+@media screen and (max-width: 720px) {
+  .ues-navbar-text.welcome {
+    display: none;
+  }
+}
+
+/** toggle **/
+
+.ues-navbar-toggle {
+  float: left;
+  width: 64px;
+  border-left: 1px solid #f75216;
+  border-right: 1px solid #f75216;
+  font-size: 22px;
+}
+
+@media screen and (min-width: 480px) {
+  .ues-navbar-toggle {
+    display: none;
+  }
+}
+
+.ues-navbar-toggle a {
+  display: block;
+  height: 34px;
+  position: relative;
+}
+
+.ues-navbar-toggle span:before,
+.ues-navbar-toggle span:after,
+.ues-navbar-toggle span {
+  position: relative;
+  display: block;
+  height: 2px;
+  left: 0;
+  z-index: 1000;
+  background-color: #f75216;
+  width: 100%;
+  -o-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.ues-navbar-toggle span {
+  top: 15px;
+}
+
+.ues-navbar-toggle span:before {
+  top: -6px;
+  content: '';
+  position: absolute;
+  -o-transition: all 0.8s ease 0s;
+  -ms-transition: all 0.8s ease 0s;
+  -moz-transition: all 0.8s ease 0s;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.ues-navbar-toggle span:after {
+  top: 6px;
+  content: '';
+  position: absolute;
+  -o-transition: all 0.8s ease 0s;
+  -ms-transition: all 0.8s ease 0s;
+  -moz-transition: all 0.8s ease 0s;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.ues-navbar-toggle.active span {
+  background-color: #dd4814;
+  transform: rotate(45deg);
+}
+
+.ues-navbar-toggle.active span:before {
+  background-color: white;
+  transform: rotate(90deg);
+  top: 0;
+  left: 0;
+}
+
+.ues-navbar-toggle.active span:after {
+  background-color: white;
+  top: 0;
+  left: 0;
+}
+
+/** end of toggle **/
+
+.ues-navbar .ues-navbar-brand,
+.ues-navbar .ues-menu {
+  float: left;
+}
+
+.ues-navbar-brand .ues-logo-white {
+  background-position: 15px 15px;
+}
+
+.ues-navbar,
+.ues-navbar a {
+  color: white;
+}
+
+.ues-navbar-brand span,
+.ues-navbar-brand a {
+  display: inline-block;
+  text-indent: -9000px;
+  direction: ltr;
+}
+
+/**
+ * set all navbar items top and bottom padding.
+ * pretty much all navbar content needs to be in one of
+ * these to be correctly positioned in the navbar.
+ *
+ * **/
+
+.ues-navbar-toggle,
+.ues-navbar-text,
+.ues-navbar-brand span,
+.ues-navbar-brand a,
+.ues-navbar .ues-menu a,
+.ues-navbar .ues-menu span {
+  padding: 15px;
+}
+
+.ues-navbar-text {
+  display: inline-block;
+  margin: 0;
+}
+
+.ues-navbar-text a {
+  border-bottom: 1px solid white;
+}
+
+@media screen and (max-width: 480px) {
+  .ues-navbar-primary-nav .ues-menu {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    bottom: 0;
+    min-width: 150px;
+    margin-left: -200px;
+    z-index: 10000;
+    background: #333;
+    -o-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+
+  .ues-navbar-primary-nav .ues-menu li {
+    display: block;
+    float: none;
+  }
+
+  .ues-navbar-primary-nav.open .ues-menu {
+    left: 200px;
+  }
+}
+
+.ues-navbar .ues-menu li,
+.ues-navbar .ues-menu li a {
+  position: relative;
+  -webkit-transition: 0.3s linear background-color;
+  -moz-transition: 0.3s linear background-color;
+  -ms-transition: 0.3s linear background-color;
+  -o-transition: 0.3s linear background-color;
+  -o-transition: 0.3s linear background-color;
+  -ms-transition: 0.3s linear background-color;
+  -moz-transition: 0.3s linear background-color;
+  -webkit-transition: 0.3s linear background-color;
+  transition: 0.3s linear background-color;
+}
+
+.ues-navbar .ues-menu .active a,
+.ues-navbar .ues-menu .active a:hover {
+  background-color: #f75216;
+}
+
+.ues-navbar .ues-menu .active a:before,
+.ues-navbar .ues-menu .active a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1px;
+  top: 0;
+  bottom: 0;
+  background-color: #dd4814;
+}
+
+.ues-navbar .ues-menu .active a:before {
+  left: 0;
+}
+
+.ues-navbar .ues-menu .active a:after {
+  right: 0;
+}
+
+.ues-navbar .ues-menu li a:hover {
+  background-color: #f75216;
+}
+
+.ues-menu.user li a {
+  width: 40px;
+  text-indent: -9000px;
+  direction: ltr;
+  background: transparent url(data:image/png;base64,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) 4px 16px no-repeat;
+}
+
+.ues-menu.user .settings {
+  background-position: -38px 16px;
+}
+
+.ues-menu.user .logout {
+  background-position: -80px 16px;
+}
+
+.ues-menu.user .together {
+  background-position: -122px 16px;
+}
+
+.ues-pagination {
+  display: inline-block;
+  margin: 1em 0;
+  padding: 4px 2px;
+}
+
+.ues-pagination li {
+  padding: 0;
+  display: inline;
+  list-style: none;
+}
+
+.ues-pagination a,
+.ues-pagination span {
+  float: left;
+  padding: 0.2em 1em;
+  position: relative;
+  margin-left: 1px;
+  border: 1px solid #eee;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.ues-pagination li:first-child span,
+.ues-pagination li:first-child a {
+  margin-left: 0;
+}
+
+.ues-pagination li a:hover {
+  border-color: #ccc;
+}
+
+.ues-pagination .-active a {
+  border-color: #dd4814;
+  background: #dd4814;
+  color: white;
+}
+
+.ues-pagination .-active a:hover {
+  border-color: #dd4814;
+}
+
+.ues-pagination .-disabled span,
+.ues-pagination .-disabled a {
+  cursor: not-allowed;
+  color: #999;
+}
+
+.ues-pagination .-disabled span:hover,
+.ues-pagination .-disabled a:hover {
+  background-color: white;
+}
+
+.ues-pagination-break span {
+  border-color: transparent;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.ues-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  border: 1px dotted #AEA79F;
+}
+
+.ues-table caption {
+  font-style: italic;
+  font-size: 13px;
+  line-height: 1;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.ues-table td,
+.ues-table th {
+  background-color: #F0EDEA;
+  border-left: 1px dotted #AEA79F;
+  border-width: 0 0 0 1px;
+  padding: 15px 10px;
+  overflow: visible;
+}
+
+.ues-table-small td,
+.ues-table-small th {
+  padding: 5px 10px;
+}
+
+.ues-table td:first-child,
+.ues-table th:first-child {
+  border-left-width: 0;
+}
+
+.ues-table thead {
+  background-color: #FEE3D2;
+  color: #333;
+  text-align: left;
+  font-weight: normal;
+  vertical-align: bottom;
+}
+
+.ues-table thead th {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  background-color: transparent;
+}
+
+.ues-table tfoot th,
+.ues-table tbody th {
+  font-weight: 300;
+}
+
+/* bordered */
+
+.ues-table-bordered th,
+.ues-table-bordered td {
+  border-bottom: 1px dotted #AEA79F;
+}
+
+.ues-table-bordered tbody > tr:last-child td,
+.ues-table-horizontal tbody > tr:last-child td {
+  border-bottom-width: 0;
+}
+
+/* horizontally bordered */
+
+.ues-table-horizontal td,
+.ues-table-horizontal th {
+  border-width: 0 0 1px 0;
+  border-bottom: 1px dotted #cbcbcb;
+}
+
+.ues-table-horizontal tbody > tr:last-child td {
+  border-bottom-width: 0;
+}
+
+/* striped */
+
+.ues-table-striped tr:nth-child(2n-1) td {
+  background-color: #F7F7F7;
+}
+html {
+  font: normal 300 16px/25px "Ubuntu", Arial, "libra sans", sans-serif;
+  color: #333;
+}
+
+/** headlines **/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  padding: 0 0 0 0;
+  margin: 0.5em 0 1em 0;
+  line-height: 1;
+}
+
+p + h2,
+p + h3,
+p + h4,
+p + h5,
+p + h6 {
+  margin-top: 1em;
+}
+
+.ues-hdisplay {
+  font-size: 45px;
+}
+
+.ues-hmain,
+h1 {
+  font-size: 32px;
+}
+
+.ues-hmedium,
+h2 {
+  font-size: 23px;
+}
+
+.ues-hlight,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 18px;
+}
+
+.ues-hinline {
+  display: inline;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: inherit;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/** paragraph styles **/
+
+p {
+  margin: 0 0 1em;
+}
+
+p:last-child {
+  margin: 0;
+}
+
+.ues-lead {
+  font-size: 23px;
+  line-height: 1.5;
+  margin: 0 0 0.5em;
+}
+
+/** links **/
+
+a {
+  color: #dd4814;
+  text-decoration: none;
+}
+
+/** lists **/
+
+ul,
+ol {
+  margin: 0.5em 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+.ues-list {
+  padding-left: 40px;
+  margin-bottom: 15px;
+}
+
+.ues-list li {
+  list-style: disc;
+}
+
+ol.ues-list li {
+  list-style: decimal;
+}
+
+dl.ues-list {
+  padding: 0;
+}
+
+dl.ues-list dd {
+  list-style: disc;
+}
+
+.ues-list-bordered {
+  padding: 0;
+}
+
+.ues-list-bordered li {
+  list-style: none;
+  border-bottom: 1px dotted #ccc;
+  padding: 0.3em;
+}
+
+.ues-list-inline {
+  display: inline;
+  overflow: hidden;
+  margin-left: 0.3em;
+  padding: 0;
+}
+
+.ues-list-inline li {
+  list-style: none;
+  display: inline-block;
+}
+
+.ues-list-inline li:after {
+  content: ' |';
+  margin: 0 0.15em;
+}
+
+.ues-list-inline li:last-child:after {
+  content: '';
+}
+
+/** everything else **/
+
+pre {
+  margin: 0.5em 0;
+}
+
+pre,
+code {
+  font-family: "Ubuntu Mono", Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-weight: 300;
+}
+
+abbr {
+  border-bottom: 1px solid #333;
+}
+
+/** logos **/
+
+/**
+ * background position 0 0 may not be the most helpful, but it is clear and 
+ * consistent!
+ */
+
+.ues-logo {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.ues-logo-orange {
+  background: white url(/media/img/svg/u1-logo-orange.svg) 0 0 no-repeat;
+}
+
+.ues-logo-white {
+  background: #dd4813 url(/media/img/svg/u1-logo-white.svg) 0 0 no-repeat;
+}

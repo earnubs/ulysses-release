@@ -1,4 +1,8 @@
-ulysses-release
-===============
+Ulysses
+=======
 
-Release directory for Ulysses CSS pattern lib
+Ubuntu Engineering CSS & HTML Pattern Lib
+
+``shell
+$ bower install --save ulysses
+```

@@ -1,0 +1,187 @@
+.ues-message {
+  padding: 0.5em 0.6em;
+  background-color: #E6E4E2;
+  border-color: #AEA79F;
+  color: #555;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.ues-message a:link {
+  color: inherit;
+  color: rgba(0,0,0,0.75);
+  text-decoration: underline;
+}
+
+.ues-message a:hover {
+  color: #000;
+}
+
+.ues-message-inline {
+  display: inline-block;
+}
+
+.ues-message-bordered {
+  border-width: 1px;
+  border-style: solid;
+  -o-box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.25);
+  -ms-box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.25);
+  -moz-box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.25);
+  -webkit-box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.25);
+  box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.25);
+}
+
+.ues-message-stack li {
+  border-top-width: 0;
+  border-bottom-color: #000;
+  border-bottom-color: rgba(0,0,0,0.25);
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+.ues-message-stack :first-child {
+  border-top-width: 1px;
+  -o-border-radius: 2px 2px 0 0;
+  -ms-border-radius: 2px 2px 0 0;
+  -moz-border-radius: 2px 2px 0 0;
+  -webkit-border-radius: 2px 2px 0 0;
+  border-radius: 2px 2px 0 0;
+}
+
+.ues-message-stack :last-child {
+  border-bottom-width: 1px;
+  -o-border-radius: 0 0 2px 2px;
+  -ms-border-radius: 0 0 2px 2px;
+  -moz-border-radius: 0 0 2px 2px;
+  -webkit-border-radius: 0 0 2px 2px;
+  border-radius: 0 0 2px 2px;
+}
+
+.ues-message-closeable {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  max-height: 1000px;
+  -o-transition: 0.3s ease all;
+  -ms-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.ues-message-closeable:after {
+  content: "✖";
+  position: absolute;
+  right: 0.6em;
+  opacity: 0;
+}
+
+.ues-message-closeable:hover:after {
+  opacity: 1;
+}
+
+.ues-message-closed {
+  max-height: 0;
+  padding: 0;
+  border: none;
+  margin: 0;
+  opacity: 0;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.ues-disabled {
+  color: #999;
+  border-color: #ccc;
+}
+
+.ues-success {
+  background-color: #AFE1B6;
+  border-color: #38B44A;
+  color: #114918;
+}
+
+.ues-warning {
+  background-color: #F8E2B1;
+  border-color: #EFB73E;
+  color: #68563F;
+}
+
+.ues-error {
+  background-color: #F5C2BF;
+  border-color: #DF382C;
+  color: #A11E1A;
+}
+
+@keyframes ues-error-pulsating {
+  from {
+    background: #FFE6E5;
+  }
+
+  to {
+    background: #FFA09B;
+  }
+}
+
+.ues-error-pulsating {
+  -o-animation: ues-error-pulsating 0.7s ease-in-out infinite alternate;
+  -ms-animation: ues-error-pulsating 0.7s ease-in-out infinite alternate;
+  -moz-animation: ues-error-pulsating 0.7s ease-in-out infinite alternate;
+  -webkit-animation: ues-error-pulsating 0.7s ease-in-out infinite alternate;
+  animation: ues-error-pulsating 0.7s ease-in-out infinite alternate;
+}
+
+.ues-information {
+  background-color: #B9E9FA;
+  border-color: #19B6EE;
+  color: #40525C;
+}
+
+@-o-keyframes ues-error-pulsating {
+  from {
+    background: #FFE6E5;
+  }
+
+  to {
+    background: #FFA09B;
+  }
+}
+
+@-ms-keyframes ues-error-pulsating {
+  from {
+    background: #FFE6E5;
+  }
+
+  to {
+    background: #FFA09B;
+  }
+}
+
+@-moz-keyframes ues-error-pulsating {
+  from {
+    background: #FFE6E5;
+  }
+
+  to {
+    background: #FFA09B;
+  }
+}
+
+@-webkit-keyframes ues-error-pulsating {
+  from {
+    background: #FFE6E5;
+  }
+
+  to {
+    background: #FFA09B;
+  }
+}

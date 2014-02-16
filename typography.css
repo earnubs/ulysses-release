@@ -1,0 +1,182 @@
+html {
+  font: normal 300 16px/25px "Ubuntu", Arial, "libra sans", sans-serif;
+  color: #333;
+}
+
+/** headlines **/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  padding: 0 0 0 0;
+  margin: 0.5em 0 1em 0;
+  line-height: 1;
+}
+
+p + h2,
+p + h3,
+p + h4,
+p + h5,
+p + h6 {
+  margin-top: 1em;
+}
+
+.ues-hdisplay {
+  font-size: 45px;
+}
+
+.ues-hmain,
+h1 {
+  font-size: 32px;
+}
+
+.ues-hmedium,
+h2 {
+  font-size: 23px;
+}
+
+.ues-hlight,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 18px;
+}
+
+.ues-hinline {
+  display: inline;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: inherit;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/** paragraph styles **/
+
+p {
+  margin: 0 0 1em;
+}
+
+p:last-child {
+  margin: 0;
+}
+
+.ues-lead {
+  font-size: 23px;
+  line-height: 1.5;
+  margin: 0 0 0.5em;
+}
+
+/** links **/
+
+a {
+  color: #dd4814;
+  text-decoration: none;
+}
+
+/** lists **/
+
+ul,
+ol {
+  margin: 0.5em 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+.ues-list {
+  padding-left: 40px;
+  margin-bottom: 15px;
+}
+
+.ues-list li {
+  list-style: disc;
+}
+
+ol.ues-list li {
+  list-style: decimal;
+}
+
+dl.ues-list {
+  padding: 0;
+}
+
+dl.ues-list dd {
+  list-style: disc;
+}
+
+.ues-list-bordered {
+  padding: 0;
+}
+
+.ues-list-bordered li {
+  list-style: none;
+  border-bottom: 1px dotted #ccc;
+  padding: 0.3em;
+}
+
+.ues-list-inline {
+  display: inline;
+  overflow: hidden;
+  margin-left: 0.3em;
+  padding: 0;
+}
+
+.ues-list-inline li {
+  list-style: none;
+  display: inline-block;
+}
+
+.ues-list-inline li:after {
+  content: ' |';
+  margin: 0 0.15em;
+}
+
+.ues-list-inline li:last-child:after {
+  content: '';
+}
+
+/** everything else **/
+
+pre {
+  margin: 0.5em 0;
+}
+
+pre,
+code {
+  font-family: "Ubuntu Mono", Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-weight: 300;
+}
+
+abbr {
+  border-bottom: 1px solid #333;
+}
+
+/** logos **/
+
+/**
+ * background position 0 0 may not be the most helpful, but it is clear and 
+ * consistent!
+ */
+
+.ues-logo {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.ues-logo-orange {
+  background: white url(/media/img/svg/u1-logo-orange.svg) 0 0 no-repeat;
+}
+
+.ues-logo-white {
+  background: #dd4813 url(/media/img/svg/u1-logo-white.svg) 0 0 no-repeat;
+}
