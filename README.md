@@ -3,6 +3,6 @@ Ulysses
 
 Ubuntu Engineering CSS & HTML Pattern Lib
 
-``shell
+```shell
 $ bower install --save ulysses
 ```
