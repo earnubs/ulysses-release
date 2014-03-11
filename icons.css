@@ -1,0 +1,11 @@
+.ues-icon-menu {
+  width: 36px;
+  height: 34px;
+  background: transparent url(icons/menu.svg) 0 0 no-repeat;
+  background-size: 72px 34px;
+  display: block;
+}
+
+.ues-icon-menu.orange {
+  background-position: -36px 0;
+}
