@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY st0 "fill:#FFFFFF;">
+	<!ENTITY st1 "fill:#DD4814;">
+]>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="72px" height="34px" viewBox="0 0 72 34" style="enable-background:new 0 0 72 34;" xml:space="preserve">
+<g>
+	<g>
+		<rect x="9" y="16" style="&st0;" width="16" height="2"/>
+		<rect x="9" y="21" style="&st0;" width="16" height="2"/>
+		<rect x="9" y="11" style="&st0;" width="16" height="2"/>
+	</g>
+	<g>
+		<path style="&st0;" d="M24,1c9.869,0,11,1.115,11,10.85v10.3C35,31.885,33.869,33,24,33H12C2.131,33,1,31.885,1,22.15v-10.3
+			C1,2.115,2.131,1,12,1H24 M24,0H12C1.631,0,0,1.481,0,11.85v10.3C0,32.519,1.631,34,12,34h12c10.369,0,12-1.481,12-11.85v-10.3
+			C36,1.481,34.369,0,24,0L24,0z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<rect x="46" y="16" style="&st1;" width="16" height="2"/>
+		<rect x="46" y="21" style="&st1;" width="16" height="2"/>
+		<rect x="46" y="11" style="&st1;" width="16" height="2"/>
+	</g>
+	<g>
+		<path style="&st1;" d="M60,1c9.869,0,11,1.115,11,10.85v10.3C71,31.885,69.869,33,60,33H48c-9.869,0-11-1.115-11-10.85v-10.3
+			C37,2.115,38.131,1,48,1H60 M60,0H48C37.631,0,36,1.481,36,11.85v10.3C36,32.519,37.631,34,48,34h12c10.369,0,12-1.481,12-11.85
+			v-10.3C72,1.481,70.369,0,60,0L60,0z"/>
+	</g>
+</g>
+</svg>

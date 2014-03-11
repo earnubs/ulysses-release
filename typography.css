@@ -1,6 +1,16 @@
-html {
-  font: normal 300 16px/25px "Ubuntu", Arial, "libra sans", sans-serif;
+html,
+body {
+  font-family: "Ubuntu", Arial, "libra sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 25px;
   color: #333;
+}
+
+.ues-g [class *= "ues-u"],
+.ues-g-r [class *= "ues-u"] {
+  font-family: "Ubuntu", Arial, "libra sans", sans-serif;
 }
 
 /** headlines **/
@@ -162,21 +172,18 @@ abbr {
 
 /** logos **/
 
-/**
- * background position 0 0 may not be the most helpful, but it is clear and 
- * consistent!
- */
-
-.ues-logo {
+.ues-u1-logo {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 143px;
+  height: 57px;
+  background-image: url(svg/u1-logo-sprite.svg);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 288px 60px;
+  text-indent: -9000px;
+  direction: ltr;
 }
 
-.ues-logo-orange {
-  background: white url(/media/img/svg/u1-logo-orange.svg) 0 0 no-repeat;
-}
-
-.ues-logo-white {
-  background: #dd4813 url(/media/img/svg/u1-logo-white.svg) 0 0 no-repeat;
+.ues-u1-logo-on-white {
+  background-position: -145px 0;
 }

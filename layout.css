@@ -1,10 +1,46 @@
+/**
+ * FIXME
+ * add a build option to create two version of final css with border-box
+ * on the ues- namespace (for backward compat) and:
+ * *, *::before, *::after { box-sizing: border-box }
+ */
+
 [class*="ues-"],
 [class*="ues-"]:before,
 [class*="ues-"]:after,
 [class*="ues-"] *,
 [class*="ues-"] *:before,
 [class*="ues-"] *:after {
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+/** TBD
+ *
+ * agree on a rwd strategy, provide general rules for use as per .ues-page,
+ * for specific things leave it up to implementation, influenced by the
+ * general rwd strategy
+ * **/
+
+.ues-page {
+  width: 984px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1210px) {
+  .ues-page {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 940px) {
+  .ues-page {
+    width: 100%;
+  }
 }
 
 /** modifiers/globals **/
@@ -34,10 +70,6 @@
 /**
  * Footer
  */
-
-.ues-footer {
-  margin-top: 4em;
-}
 
 .ues-footer > .ues-footer-row {
   font-size: 11px;
@@ -85,7 +117,7 @@
 
 .ues-box {
   padding: 20px;
-  margin: 0 0 2em 0;
+  margin: 0 0 20px 0;
   -o-border-radius: 12px;
   -ms-border-radius: 12px;
   -moz-border-radius: 12px;
@@ -109,25 +141,12 @@
   border: 1px solid #ccc;
 }
 
-.ues-container {
-  margin: 0 auto;
-}
-
-@media screen and (min-width: 979px) {
-  .ues-container {
-    max-width: 970px;
-  }
-}
-
-.ues-container-small {
-  margin: 0 1em;
-}
-
-@media screen and (min-width: 760px) {
-  .ues-container-small {
-    max-width: 480px;
-    margin: 0 auto;
-  }
+.ues-box-shadowed {
+  -o-box-shadow: 0px 1px 6px 0px #C2C2C2;
+  -ms-box-shadow: 0px 1px 6px 0px #C2C2C2;
+  -moz-box-shadow: 0px 1px 6px 0px #C2C2C2;
+  -webkit-box-shadow: 0px 1px 6px 0px #C2C2C2;
+  box-shadow: 0px 1px 6px 0px #C2C2C2;
 }
 
 .ues-well {
@@ -141,14 +160,4 @@
   -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
-}
-
-.ues-layout-app {
-  /** padding to match fixed navbar height **/
-  padding-top: 55px;
-}
-
-.ues-layout-body {
-  /** padding to match fixed navbar height **/
-  padding-top: 80px;
 }

@@ -1,9 +1,9 @@
 form {
-  margin: 1em 0;
+  margin: 15px 0;
 }
 
 fieldset {
-  margin: 0 0 2em 0;
+  margin: 0 0 15px 0;
   padding: 0;
   border: 0;
 }
@@ -14,28 +14,28 @@ legend {
   font-size: 23px;
   line-height: inherit;
   border: 0;
-  margin: 0 0 1em 0;
+  margin: 0 0 15px 0;
 }
 
 label {
   display: block;
-  margin: 0.8em 0 0.3em;
+  margin: 10px 0 5px;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
-  margin-right: 0.5em;
+  margin-right: 5px;
 }
 
 /** use a span or div depending on what you want for block/inline **/
 
 .ues-form-help {
   font-size: 14px;
-  padding: 0em 1em;
+  padding: 0em 15px;
   background-color: #eee;
   color: #555;
   position: relative;
-  margin: 0.5em 0;
+  margin: 10px 0;
   -o-border-radius: 3px;
   -ms-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -52,7 +52,7 @@ span.ues-form-help {
 
 .ues-inline {
   display: inline-block;
-  margin-right: 0.5em;
+  margin-right: 10px;
 }
 
 input[type="text"],
@@ -72,10 +72,11 @@ input[type="color"],
 select,
 textarea {
   width: 100%;
-  padding: 0.5em 0.6em;
-  margin: 0 0 0.5em 0;
+  padding: 8px;
+  margin: 0 0 8px 0;
   display: block;
   border: 1px solid #ccc;
+  line-height: 14px;
   font-weight: inherit;
   -o-border-radius: 2px;
   -ms-border-radius: 2px;

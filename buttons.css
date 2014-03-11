@@ -13,7 +13,7 @@
   text-align: center;
   vertical-align: baseline;
   text-transform: uppercase;
-  border: 1px solid #aea79f;
+  border: 1px solid #ccc;
   -o-border-radius: 3px;
   -ms-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -142,20 +142,33 @@ a.ues-button {
   vertical-align: middle;
 }
 
-.ues-button-group .ues-button {
+.ues-button-group:before,
+.ues-button-group:after {
+  content: ' ';
+  display: table;
+}
+
+.ues-button-group:after {
+  clear: both;
+}
+
+.ues-button-group .ues-button,
+.ues-button-group input[type="search"] {
   float: left;
 }
 
 /** first child of >1 buttons **/
 
+.ues-button-group > input[type="search"]:first-child:not(:last-child):not(.ues-dropdown-toggle),
 .ues-button-group > .ues-button:first-child:not(:last-child):not(.ues-dropdown-toggle) {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   border-right: none;
 }
 
-/** last child of >1 buttonsi **/
+/** last child of >1 buttons **/
 
+.ues-button-group > input[type="search"]:last-child:not(:first-child),
 .ues-button-group > .ues-button:last-child:not(:first-child),
 .ues-button-group > .ues-dropdown-toggle:not(:first-child) {
   border-top-left-radius: 0px;

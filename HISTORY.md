@@ -1,6 +1,15 @@
 Ulysses Change History
 ======================
 
+0.2.0 (12-03-2014)
+-----
+
+* Updated navbar pattern, taking inspiration from Bootstrap
+* add first icon
+* replace em with px where appropriate
+* better float clearing
+* bug fixes
+
 0.1.0 (17-02-2014)
 -----
 
