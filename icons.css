@@ -1,0 +1,55 @@
+.ues-icon-menu {
+  width: 36px;
+  height: 34px;
+  background: transparent url(icons/menu.svg) 0 0 no-repeat;
+  background-size: 72px 34px;
+  display: block;
+}
+
+.ues-icon-menu.orange {
+  background-position: -36px 0;
+}
+
+.ues-icon-search {
+  width: 36px;
+  height: 36px;
+  background: transparent url(icons/search.svg) 0 0 no-repeat;
+  background-size: 72px 36px;
+  display: block;
+}
+
+.ues-icon-search.orange {
+  background-position: -36px 0;
+}
+
+.ues-icon-search.small {
+  background-size: 48px 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.ues-icon-search.orange.small {
+  background-position: -24px 0;
+}
+
+.ues-icon-search.smaller {
+  background-size: 32px 16px;
+  width: 16px;
+  height: 16px;
+}
+
+.ues-icon-search.orange.smaller {
+  background-position: -16px 0;
+}
+
+.ues-icon-search-bordered {
+  width: 36px;
+  height: 34px;
+  background: transparent url(icons/search-bordered.svg) 0 0 no-repeat;
+  background-size: 72px 34px;
+  display: block;
+}
+
+.ues-icon-search-bordered.orange {
+  background-position: -36px 0;
+}

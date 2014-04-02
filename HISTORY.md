@@ -1,6 +1,12 @@
 Ulysses Change History
 ======================
 
+0.2.1 (02-04-2014)
+-----
+
+* fixed secondary menus in navbar
+* updated navbar pattern with two search patterns
+
 0.2.0 (12-03-2014)
 -----
 
