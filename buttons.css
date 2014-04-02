@@ -98,6 +98,24 @@
   border-color: #dd4814;
 }
 
+.ues-button-search {
+  background-color: white;
+  background-image: none;
+  border: none;
+  border-left: 1px solid #eee;
+}
+
+.ues-button-search:hover {
+  background-color: #f0f0f0;
+  border-color: #dedede;
+}
+
+.ues-button-search:focus,
+.ues-button-search:active {
+  border-color: #c8c8c8;
+  background-color: #dedede;
+}
+
 a.ues-button {
   color: inherit;
 }
